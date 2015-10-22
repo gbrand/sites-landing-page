@@ -5,7 +5,7 @@
 html,body { width: 100%; height: 100%; padding: 0px; margin: 0px; font-family: 'Ubuntu', sans-serif !important; color: #232323;}
 p{ font-weight: 300; font-size: 1.2em;}
 h1,h2,h3,h4{font-size: 2.5em; font-weight: 700;}
-section{padding: 50px 0;}
+section{padding: 50px 0; padding-bottom: 80px;}
 /*Auxiliares*/
 .dica{font-size:1.2em !important; ; text-align: center;}
 .bold{font-weight: 600;}
@@ -87,6 +87,39 @@ section{padding: 50px 0;}
 	.afundar { display: inline-block; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-property: transform; transition-property: transform;
   	-webkit-transform: translateZ(0); transform: translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
 	.afundar:hover, .afundar:focus, .afundar:active { -webkit-transform: translateY(5px); transform: translateY(5px); }
+// pulsar
+	
+	@-webkit-keyframes pulsar {
+  0% {
+    box-shadow: 0 0 0 0 #ff962c;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 150, 44, 0);
+  }
+}
+@-moz-keyframes pulsar {
+  0% {
+    box-shadow: 0 0 0 0 #ff962c;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 150, 44, 0);
+  }
+}
+@keyframes pulsar {
+  0% {
+    box-shadow: 0 0 0 0 #ff962c;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 150, 44, 0);
+  }
+}
+
+.pulsar{-webkit-animation: pulsar 2s infinite;
+    -moz-animation: pulsar 2s infinite;
+    animation: pulsar 2s infinite;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;}
 
 /*Loader*/
 #loader{ display: block; position: fixed; top: 0; left: 0; width: 100%; z-index: 999; background: url(../img/loader.GIF) center no-repeat #fff;  height: 100%; background-color: #fff;}
@@ -100,3 +133,51 @@ section{padding: 50px 0;}
 .mudaMargemMenu .fone-horizontal{display: inline-block !important; border-right: none !important; }
 .mudaMargemMenu .fone-horizontal p{ color: #fff; }
 .mudaFone{ display: inline !important;}
+
+@font-face {
+      font-family: 'gbrand-digital';
+      src: url('../fonts/gbrand-digital.eot?7794393');
+      src: url('../fonts/gbrand-digital.eot?7794393#iefix') format('embedded-opentype'),
+           url('../fonts/gbrand-digital.woff?7794393') format('woff'),
+           url('../fonts/gbrand-digital.ttf?7794393') format('truetype'),
+           url('../fonts/gbrand-digital.svg?7794393#gbrand-digital') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
+    .ic-gbrand
+    {
+      font-family: "gbrand-digital";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }

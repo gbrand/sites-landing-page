@@ -1,7 +1,7 @@
 #menu {
   width: 100%;
   border-bottom: 1px transparent solid;
-  background: transparent;
+  background: #181818;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -44,7 +44,7 @@ nav .btn-mobile {
   transition: all 0.5s ease-out;
   padding: 0 10px 10px 10px;
   border-bottom: 1px transparent solid;
-  color: #000;
+  color: #fff;
 }
 #menu-itens li a:hover {
   text-decoration: none !important;
@@ -96,11 +96,11 @@ nav .btn-mobile {
   top: 110px;
 }
 #fone-topo {
-  color: #000;
+  color: #fff;
   font-size: 2em;
   margin-top: -29px;
   margin-left: 60px;
-  max-height: 50px;
+  max-height: 80px;
 }
 #fone-topo li {
   display: block ;

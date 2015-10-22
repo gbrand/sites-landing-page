@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="gbrand-digital" horiz-adv-x="1000" >
+<font-face font-family="gbrand-digital" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="cafe" unicode="&#xe800;" d="m127-107h136c2-12 12-21 25-21h309c13 0 22 9 24 21h136c23 0 42 19 42 42h-713c0-23 18-42 41-42z m836 429c-35 28-83 28-116 25 1 22 2 45 2 69h-849c0-229 35-395 254-457h340c87 25 145 66 183 120 84 2 218 35 223 150 2 50-19 78-37 93z m-151-177c16 41 26 87 31 138 23 4 61 6 81-10 4-3 15-12 13-41-2-60-76-80-125-87z m-466 303c0 0 161 12 87 148-59 110-46 174 31 232 0 0-250-64-104-260 53-86-14-120-14-120z m109 11c0 0 129 27 59 132-26 45 9 61 9 61s-83-3-48-74c28-58 20-91-20-119z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

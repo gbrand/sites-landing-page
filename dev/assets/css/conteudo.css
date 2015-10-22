@@ -9,17 +9,18 @@
   color: #fff;
   margin: 0 !important;
 }
-.titulo-pagina h2 span {
+.titulo-pagina h2 span:first-child {
   font-weight: 300;
 }
 #chamada {
   background: url(../../img/fundos/fundo-servicos-sites.jpg) no-repeat fixed;
+  background-size: cover;
   padding: 80px 0;
   text-align: center;
 }
 #chamada h1 {
   color: #fff;
-  padding: 0 100px;
+  padding: 0 65px;
   font-weight: 300;
 }
 #chamada hr {
@@ -33,9 +34,10 @@
 }
 #recursos {
   text-align: center;
+  padding-bottom: 30px;
 }
 #recursos h2 {
-  color: #C9252C;
+  color: #232323;
 }
 #prog-features {
   text-align: center;
@@ -66,11 +68,13 @@
   font-size: 1.8em;
 }
 #design i {
-  font-size: 25em;
+  font-size: 18em;
   text-shadow: 5px 5px 3px #A40E11;
+  margin-top: 45px;
+  margin-right: 30px;
 }
 #design .col-md-4 .row {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 #ativacao {
   text-align: center;
@@ -83,13 +87,13 @@
   font-size: 2em;
 }
 #tt-opcionais {
-  background-color: #181818;
+  background-color: #04011A;
 }
 #tt-opcionais p {
   color: #fff !important;
 }
 #opcionais {
-  background-color: #181818;
+  background-color: #04011A;
 }
 #opcionais .row {
   text-align: left;
