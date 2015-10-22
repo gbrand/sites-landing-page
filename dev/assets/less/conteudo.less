@@ -1,0 +1,182 @@
+// Mixins
+.add-transition(@duration){
+	-webkit-transition: all @duration ease-out;
+	-o-transition: all @duration ease-out;
+	transition: all @duration ease-out;
+}
+
+.titulo-pagina{
+	text-align: center;
+	background-color: #E02833;
+	padding: 30px 0px;
+
+	h2{
+			font-weight: 700;
+			font-style: italic;
+			color: #fff;
+			margin:0 !important;
+
+			span{
+				font-weight: 300;
+			}
+	}
+}
+
+#chamada{
+	background: url(../../img/fundos/fundo-servicos-sites.jpg) no-repeat fixed;
+	padding: 80px 0;
+	text-align: center;
+ 
+	h1{
+		color: #fff;
+		padding: 0 100px;
+		font-weight: 300;
+	}
+
+	hr{ 
+		max-width: 15%;
+		margin-top: 35px;
+	}
+
+	i{
+		font-size: 2em;
+		color: #CB2531;
+		margin-top: 30px;
+	}
+}
+
+#recursos{
+	text-align: center;
+
+	h2{
+		color: #C9252C;
+	}
+}
+
+#prog-features{
+	text-align: center;
+
+	h1{
+		font-size: 5em;
+		color: #CA2430;
+	}
+
+	h3{
+		font-size: 2em;
+	}
+}
+
+#tt-design{
+	background-color: #CA2631;
+
+	p{
+		color: #fff !important;
+	}
+}
+
+#design{
+	background-color: #CA2631;
+	text-align: center;
+
+	h1, h4, i{
+		color: #fff;
+	}
+
+	h4{
+		font-size: 1.8em;
+	}
+
+	i{
+		font-size: 25em;
+		text-shadow: 5px 5px 3px #A40E11;
+	}
+
+	.col-md-4{
+		.row{
+			margin-top: 50px;
+		}
+	}
+}
+
+#ativacao{
+	text-align: center;
+
+	h1{
+		font-size: 5em;
+		color: #CA2430;
+	}
+
+	h3{
+		font-size: 2em;
+	}
+}
+
+// Opcionais
+
+#tt-opcionais{
+	background-color: #181818;
+
+	p{
+		color: #fff !important;
+	}
+}
+
+#opcionais{
+	background-color: #181818;
+	
+	.row{
+		text-align: left;
+		color: #fff;
+
+		.col-md-4{
+			border-left: 4px #fff solid;
+
+			h4{
+				font-size: 1.8em;
+				color: #CA262F;
+			}
+		}
+
+	}
+}
+
+// Complementares
+#complementos{
+	text-align: center;
+
+	.row{
+		p{
+			font-weight: 500;
+			background-color: #181818;
+			padding: 50px;
+			color: #fff;
+			.add-transition(0.8s);
+
+			&:hover{
+				background-color: #CA262F;
+			}
+
+			span{
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+// Atendimento
+#atendimento{
+	
+	padding-bottom: 80px;
+
+	h1{
+		color: #BAADAC!important;
+		font-style: italic !important;
+	}
+
+	.linha{
+		width: 100%;
+		height: 2px;
+		background-color: #DDDDDD;
+		margin-top: 50px;
+	}
+}

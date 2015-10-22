@@ -10,7 +10,8 @@ module.exports = function(grunt){
 				},
 				files:{
 					"dev/assets/css/menu.css":"dev/assets/less/menu.less",
-          "dev/assets/css/core.css":"dev/assets/less/core.less"
+          "dev/assets/css/core.css":"dev/assets/less/core.less",
+          "dev/assets/css/conteudo.css":"dev/assets/less/conteudo.less"
 				}
 			}
 		}, // Less
@@ -34,16 +35,16 @@ module.exports = function(grunt){
   		}, // Uglify
  	 	concat: {
     		options: {
-      			separator: ';'
+      			separator: ''
     		},
     		dist: {
-      			src: ['dev/assets/css/core.css', 'dev/assets/css/menu.css'],
+      			src: ['dev/assets/css/core.css', 'dev/assets/css/menu.css', 'dev/assets/css/conteudo.css'],
             dest: 'dev/assets/css/main.css'
     		}
   		}, // Concat
   		watch: {
   			scripts: {
-    			files: ['dev/assets/js/main.js','dev/assets/less/menu.less'],
+    			files: ['dev/assets/js/main.js','dev/assets/less/menu.less', 'dev/assets/less/core.less', 'dev/assets/less/conteudo.less'],
     			tasks: ['less','concat','cssmin','uglify'],
     		options: {
       			spawn: false

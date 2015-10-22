@@ -15,7 +15,6 @@
 #menu { 
 	width: 100%;
 	border-bottom: 1px transparent solid;
-	position: fixed; 
 	background:transparent;  
 	z-index: 2;
 	.add-transition(0.5s);
@@ -55,6 +54,7 @@ nav .btn-mobile{
 		.add-transition(0.5s);
 		padding: 0 10px 10px 10px;
 		border-bottom: 1px transparent solid;
+		color:#000;
 
 		&:hover{
 			text-decoration: none !important; border-bottom: 1px rgba(255, 255, 255, 0.7)  solid;
@@ -119,10 +119,11 @@ nav .btn-mobile{
  
 // Fone topo
 #fone-topo {
-	color: #fff;
+	color: #000;
 	font-size: 2em;
 	margin-top: -29px ;
 	margin-left: 60px;
+	max-height: 50px;
 
 	li{
 		display: block ;
@@ -133,7 +134,7 @@ nav .btn-mobile{
 	&:first-child:after{
 		font-weight: 600;
 		font-size: 1.5em; 
-		content: '.';
+		content: '.'; 
 		position: relative;
 		top: -65px;
 		right: -71px;

@@ -1,8 +1,5 @@
 $(document).ready(function(){
-	// Botão de teste
-	$("#teste").hover(function(){
-		alert("That's ok, go hard!!");
-	});
-
-	$("#teste").hasClass(".teste");
+	new WOW().init();
+	// Parallax
+	$('#chamada').parallax("50%", 0.8);
 });
