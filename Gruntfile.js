@@ -9,9 +9,7 @@ module.exports = function(grunt){
 					paths:["dev/assets/css"]
 				},
 				files:{
-					"dev/assets/css/galeria.css":"dev/assets/less/galeria.less",
-					"dev/assets/css/topo.css":"dev/assets/less/topo.less",
-					"dev/assets/css/rodape.css":"dev/assets/less/rodape.less"
+					"dev/assets/css/topo.css":"dev/assets/less/topo.less"
 				}
 			}
 		}, // Less
@@ -38,14 +36,12 @@ module.exports = function(grunt){
       			separator: ';'
     		},
     		dist: {
-      			src: ['dev/assets/css/topo.css', 'dev/assets/css/galeria.css', 'dev/assets/css/rodape.css'],
-      			dest: 'dev/assets/css/main.css'
+      			src: ['dev/assets/css/topo.css'
     		}
   		}, // Concat
   		watch: {
   			scripts: {
-    			files: ['dev/assets/js/main.js','dev/assets/less/topo.less','dev/assets/less/galeria.less',
-    			'dev/assets/less/rodape.less'],
+    			files: ['dev/assets/js/main.js','dev/assets/less/topo.less'],
     			tasks: ['less','concat','cssmin','uglify'],
     		options: {
       			spawn: false
@@ -60,13 +56,13 @@ module.exports = function(grunt){
           			authKey: 'lab'
         		},
         		src: 'dev/',
-        		dest: 'www/lab/teste'
+        		dest: 'www/lab/sites-landing'
       		}
     	}, //Dploy
    compress : {
       main : {
         options : {
-          archive : "download/nomeProj.zip"
+          archive : "download/sites-landing.zip"
         },
       files : [
           { expand: true, src : "**/*", cwd : "dev/" }

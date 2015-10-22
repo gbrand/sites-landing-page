@@ -1,0 +1,31 @@
+{
+  "name": "sites-landing-page",
+  "version": "1.0.0",
+  "description": "simples landing page to show our features",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-cli": "^0.1.13"
+  },
+  "devDependencies": {
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-ftp-deploy": "^0.1.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbrand/sites-landing-page.git"
+  },
+  "author": "balladares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbrand/sites-landing-page/issues"
+  },
+  "homepage": "https://github.com/gbrand/sites-landing-page#readme"
+}
