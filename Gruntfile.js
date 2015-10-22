@@ -9,7 +9,8 @@ module.exports = function(grunt){
 					paths:["dev/assets/css"]
 				},
 				files:{
-					"dev/assets/css/topo.css":"dev/assets/less/topo.less"
+					"dev/assets/css/menu.css":"dev/assets/less/menu.less",
+          "dev/assets/css/core.css":"dev/assets/less/core.less"
 				}
 			}
 		}, // Less
@@ -36,12 +37,13 @@ module.exports = function(grunt){
       			separator: ';'
     		},
     		dist: {
-      			src: ['dev/assets/css/topo.css'
+      			src: ['dev/assets/css/core.css', 'dev/assets/css/menu.css'],
+            dest: 'dev/assets/css/main.css'
     		}
   		}, // Concat
   		watch: {
   			scripts: {
-    			files: ['dev/assets/js/main.js','dev/assets/less/topo.less'],
+    			files: ['dev/assets/js/main.js','dev/assets/less/menu.less'],
     			tasks: ['less','concat','cssmin','uglify'],
     		options: {
       			spawn: false

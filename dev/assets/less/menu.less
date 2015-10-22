@@ -1,25 +1,17 @@
 // Mixins
-.animation-difines(@duration, @delay){
-	-webkit-animation-duration: @duration; 
-	-moz-animation-duration: @duration; 
-	-o-animation-duration: @duration; 
-	-webkit-animation-delay: @delay; 
-	-moz-animation-delay: @delay; 
-	-o-animation-delay: @delay;
-}
-
 .add-transition(@duration){
 	-webkit-transition: all @duration ease-out;
 	-o-transition: all @duration ease-out;
 	transition: all @duration ease-out;
 }
 
-.font-ubuntu(){
-	
+.ft-ubuntu(@size, @weight){
+	font-family: 'Ubuntu', sans-serif; 
+	font-size: @size; 
+	font-weight: @weight; 
 }
 
-// Components
-
+// Menu
 #menu { 
 	width: 100%;
 	border-bottom: 1px transparent solid;
@@ -27,7 +19,6 @@
 	background:transparent;  
 	z-index: 2;
 	.add-transition(0.5s);
-	.animation-defines(2s, 1.5s)
 
 	img { 
 		max-width: 220px; 
@@ -43,15 +34,31 @@ nav .btn-mobile{
 	display: none;
 }
 
+// Menu itens
 #menu-itens { 
 	list-style: none; 
 	float: right; 
 	margin-top: 45px; 
 	.add-transition(0.8s);
 
+	> .fone-container {
+		float: right;
+	}
+
 	li {
 		display: inline;
 		padding: 5px 5px 0px 5px;
+	}
+
+	li a {
+		.ft-ubuntu(1.1em,300);
+		.add-transition(0.5s);
+		padding: 0 10px 10px 10px;
+		border-bottom: 1px transparent solid;
+
+		&:hover{
+			text-decoration: none !important; border-bottom: 1px rgba(255, 255, 255, 0.7)  solid;
+		}
 	}
 
 	.fone-horizontal {
@@ -65,28 +72,75 @@ nav .btn-mobile{
 	}
 }
 
+// Itens
+#itens{
+	ul li a{
+		&:active, &:focus{
+			 text-decoration: none !important; border-bottom: 1px rgba(255, 255, 255, 0.7)  solid;
+		}
+	}
+}
 
-#menu-itens li a{ color: #fff !important;  padding: 0 10px 10px 10px; transition: all 0.5s ease-out; 
-border-bottom: 1px transparent solid;}
-#menu-itens li a:hover, #itens ul li a:active, #itens ul li a:focus{ text-decoration: none !important; border-bottom: 1px rgba(255, 255, 255, 0.7)  solid;}
-#menu-mobile{ border-top: 1px rgba(255, 255, 255, 0.33) solid; display: none; }
-#menu-mobile ul{ padding: 0; float: inherit !important; margin-left: -30px; margin: 30px 0 30px 0 !important; list-style: none;}
-#menu-mobile ul li{ display: list-item !important; text-align: center !important;}
-#menu-mobile ul li a{ color: #fff !important; font-family: 'Ubuntu', sans-serif; font-size: 1.2em; font-weight: 300;  transition: all 0.5s ease-out; 
-border-bottom: 1px transparent solid;}
-#menu-mobile ul li a:hover{ text-decoration: none; border-bottom: 1px rgba(255, 255, 255, 0.33) solid; }
-#topo .linha-extra{ top: 110px; -webkit-animation: formarLinha 2.5s 1; -moz-animation: formarLinha 2.5s 1; animation: formarLinha 2.5s 1;}
-#menu-itens > .fone-container{float: right;}
-#fone-topo{color: #fff; font-size: 2em; margin-top: -29px ; margin-left: 60px;}
-#fone-topo li{ display: block ; padding: 0px ; margin-bottom: -10px;}
-#fone-topo:first-child:after{font-weight: 600; font-size: 1.5em; content: '.'; position: relative; top: -65px; right: -71px; color: #D72832;}
-#fone-topo .bold{ font-weight: 600; }
-/*Modificações de rolagem do menu*/
-.mudaCorFundo{ background: rgba(0, 0, 0, 0.9) !important; border-bottom:1px rgba(255, 255, 255, 0.6) solid !important; }
-.mudaTamLogo{ max-width: 150px !important; }
-.mudaMargemMenu{ margin-top: 10px !important; }
-.mudaMargemMenu li{ border-right: 1px rgba(255, 255, 255, 0.49) solid; padding: 0 5px 0 5px !important; }
-.mudaMargemMenu .fone-container{ display: none !important; }
-.mudaMargemMenu .fone-horizontal{display: inline-block !important; border-right: none !important; }
-.mudaMargemMenu .fone-horizontal p{ color: #fff; }
-.mudaFone{ display: inline !important;}
+// Menu mobile
+#menu-mobile{
+	border-top: 1px rgba(255, 255, 255, 0.33) solid;
+	display: none;
+
+	ul{
+		padding: 0;
+		float: inherit !important;
+		margin-left: -30px;
+		margin: 30px 0 30px 0 !important;
+		list-style: none;
+
+		li{
+			display: list-item !important;
+			text-align: center !important;
+		
+
+			a{
+				 color: #fff !important;
+				 .ft-ubuntu(1.2em,300);
+				 .add-transition(0.5s);
+				 border-bottom: 1px transparent solid;
+
+				 &:hover{
+				 	text-decoration: none;
+				 	border-bottom: 1px rgba(255, 255, 255, 0.33) solid;
+				 }
+			}
+		}
+	}
+}
+// Topo
+#topo .linha-extra {
+	top: 110px;
+}
+ 
+// Fone topo
+#fone-topo {
+	color: #fff;
+	font-size: 2em;
+	margin-top: -29px ;
+	margin-left: 60px;
+
+	li{
+		display: block ;
+		padding: 0px ;
+		margin-bottom: -10px;
+	}
+
+	&:first-child:after{
+		font-weight: 600;
+		font-size: 1.5em; 
+		content: '.';
+		position: relative;
+		top: -65px;
+		right: -71px;
+		color: #D72832;
+	}
+
+	.bold{
+		font-weight: 600;
+	}
+}

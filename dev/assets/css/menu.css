@@ -1,0 +1,120 @@
+#menu {
+  width: 100%;
+  border-bottom: 1px transparent solid;
+  position: fixed;
+  background: transparent;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+#menu img {
+  max-width: 220px;
+  float: left;
+  padding: 20px;
+  -webkit-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+nav .btn-mobile {
+  float: right;
+  margin-top: 25px;
+  display: none;
+}
+#menu-itens {
+  list-style: none;
+  float: right;
+  margin-top: 45px;
+  -webkit-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+#menu-itens > .fone-container {
+  float: right;
+}
+#menu-itens li {
+  display: inline;
+  padding: 5px 5px 0px 5px;
+}
+#menu-itens li a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  padding: 0 10px 10px 10px;
+  border-bottom: 1px transparent solid;
+}
+#menu-itens li a:hover {
+  text-decoration: none !important;
+  border-bottom: 1px rgba(255, 255, 255, 0.7) solid;
+}
+#menu-itens .fone-horizontal {
+  display: none;
+}
+#menu-itens .fone-horizontal span {
+  margin: 0 3px 0 3px;
+  color: #D72832;
+  font-size: 2em;
+}
+#itens ul li a:active,
+#itens ul li a:focus {
+  text-decoration: none !important;
+  border-bottom: 1px rgba(255, 255, 255, 0.7) solid;
+}
+#menu-mobile {
+  border-top: 1px rgba(255, 255, 255, 0.33) solid;
+  display: none;
+}
+#menu-mobile ul {
+  padding: 0;
+  float: inherit !important;
+  margin-left: -30px;
+  margin: 30px 0 30px 0 !important;
+  list-style: none;
+}
+#menu-mobile ul li {
+  display: list-item !important;
+  text-align: center !important;
+}
+#menu-mobile ul li a {
+  color: #fff !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border-bottom: 1px transparent solid;
+}
+#menu-mobile ul li a:hover {
+  text-decoration: none;
+  border-bottom: 1px rgba(255, 255, 255, 0.33) solid;
+}
+#topo .linha-extra {
+  top: 110px;
+}
+#fone-topo {
+  color: #fff;
+  font-size: 2em;
+  margin-top: -29px;
+  margin-left: 60px;
+}
+#fone-topo li {
+  display: block ;
+  padding: 0px ;
+  margin-bottom: -10px;
+}
+#fone-topo:first-child:after {
+  font-weight: 600;
+  font-size: 1.5em;
+  content: '.';
+  position: relative;
+  top: -65px;
+  right: -71px;
+  color: #D72832;
+}
+#fone-topo .bold {
+  font-weight: 600;
+}

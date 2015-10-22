@@ -21,14 +21,32 @@
     <![endif]-->
   </head>
   <body>
-  <div class="container">
-   <div id="oi" class="well text-left">
-     <h2>Novo Projeto.</h2>
-     <p class="lead">Perfeito!</p>
-     <p>Se você executou a task no grunt e este vendo esa página estilizaa, parece que tudo está OK, mas por garantia, faça um teste ^^</p>
-     <button id="teste" class="btn btn-lg btn-info">Teste</button>
-   </div>
-  </div> 
+           <nav id="menu" class="animated fadeInDown">
+            <div class="container">
+               <a href="#topo"> <img src="assets/img/logos/logo-topo.png" alt=""></a>
+               <div id="itens">
+                  <ul id="menu-itens">
+                     <li><a href="#Agencia">Agência</a></li>
+                     <li><a href="#Servicos">Serviços</a></li>
+                     <li><a href="#Lovers">Lovers</a></li>
+                     <li><a href="#Clientes">Clientes</a></li>
+                     <li><a href="#Portfolio">Portfolio</a></li>
+                     <li><a href="#Contato">Contato</a></li>
+                     <li class="fone-horizontal"><p class="bold">3484<span>.</span>2015</p></li>
+                     <li class="fone-container">
+                        <ul id="fone-topo">
+                           <li>3484</li>
+                           <li><span class="bold">2015</span></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               <!-- Botao menu mobile -->
+               <button class="btn btn-mobile btn-lg"><i class="fa fa-bars"></i></button>
+            </div>
+            <!-- Holder para menu mobile -->
+            <div class="row" id="menu-mobile"></div>
+         </nav>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
