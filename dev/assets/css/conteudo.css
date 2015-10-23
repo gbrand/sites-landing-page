@@ -17,6 +17,9 @@
   background-size: cover;
   padding: 80px 0;
   text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 #chamada h1 {
   color: #fff;
@@ -58,6 +61,7 @@
 #design {
   background-color: #CA2631;
   text-align: center;
+  padding: 20px 0 90px;
 }
 #design h1,
 #design h4,
@@ -100,7 +104,7 @@
   color: #fff;
 }
 #opcionais .row .col-md-4 {
-  border-left: 4px #fff solid;
+  border-left: 1px #fff solid;
 }
 #opcionais .row .col-md-4 h4 {
   font-size: 1.8em;
@@ -136,4 +140,12 @@
   height: 2px;
   background-color: #DDDDDD;
   margin-top: 50px;
+}
+#atendimento .cd-more-info {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#social {
+  padding-top: 0px;
 }
