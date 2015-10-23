@@ -1,3 +1,5 @@
 .ftppass
 download/
 node_modules/
+dev/modules/enviar-contato.php
+dev/modules/enviar-ligue.php
